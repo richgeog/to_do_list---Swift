@@ -46,12 +46,41 @@
                                     <constraint firstItem="Dmx-Vb-nJ6" firstAttribute="top" secondItem="tWq-zt-DYo" secondAttribute="top" id="xJo-Xo-IQp"/>
                                 </constraints>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m5Z-Rt-1JH">
+                                <rect key="frame" x="20" y="141" width="560" height="439"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aFU-fZ-YAA" customClass="ToDoTableViewCell" customModule="to_do_list">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aFU-fZ-YAA" id="mgc-b0-xmg">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tz-Fu-NQT">
+                                                    <rect key="frame" x="80" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="toDoCellLabel" destination="mgc-b0-xmg" id="oRc-gr-bvR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="m5Z-Rt-1JH" secondAttribute="trailing" id="D8Q-pK-7Ma"/>
                             <constraint firstItem="tWq-zt-DYo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E2Y-AU-GcU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="m5Z-Rt-1JH" secondAttribute="leading" id="Gv9-ow-ZBZ"/>
                             <constraint firstItem="tWq-zt-DYo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iEq-NC-e97"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m5Z-Rt-1JH" secondAttribute="bottom" constant="20" id="mXi-AU-V5e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tWq-zt-DYo" secondAttribute="trailing" id="u51-LX-Ixz"/>
+                            <constraint firstItem="m5Z-Rt-1JH" firstAttribute="top" secondItem="tWq-zt-DYo" secondAttribute="bottom" constant="16" id="zVp-vH-zxt"/>
                         </constraints>
                     </view>
                     <connections>

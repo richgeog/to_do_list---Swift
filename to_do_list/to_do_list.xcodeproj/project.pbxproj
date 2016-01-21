@@ -14,6 +14,7 @@
 		332093551C50FB9E00C6DAE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332093531C50FB9E00C6DAE9 /* LaunchScreen.storyboard */; };
 		332093601C50FB9E00C6DAE9 /* to_do_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3320935F1C50FB9E00C6DAE9 /* to_do_listTests.swift */; };
 		3320936B1C50FB9E00C6DAE9 /* to_do_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3320936A1C50FB9E00C6DAE9 /* to_do_listUITests.swift */; };
+		332093791C51170800C6DAE9 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332093781C51170800C6DAE9 /* ToDoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		332093661C50FB9E00C6DAE9 /* to_do_listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = to_do_listUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3320936A1C50FB9E00C6DAE9 /* to_do_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = to_do_listUITests.swift; sourceTree = "<group>"; };
 		3320936C1C50FB9E00C6DAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		332093781C51170800C6DAE9 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		3320933E1C50FB9E00C6DAE9 = {
 			isa = PBXGroup;
 			children = (
+				332093781C51170800C6DAE9 /* ToDoTableViewCell.swift */,
 				332093491C50FB9E00C6DAE9 /* to_do_list */,
 				3320935E1C50FB9E00C6DAE9 /* to_do_listTests */,
 				332093691C50FB9E00C6DAE9 /* to_do_listUITests */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332093791C51170800C6DAE9 /* ToDoTableViewCell.swift in Sources */,
 				3320934D1C50FB9E00C6DAE9 /* ViewController.swift in Sources */,
 				3320934B1C50FB9E00C6DAE9 /* AppDelegate.swift in Sources */,
 			);
