@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33246AB31C50ECF700039E29"
+               BlueprintIdentifier = "332093461C50FB9E00C6DAE9"
                BuildableName = "to_do_list.app"
                BlueprintName = "to_do_list"
                ReferencedContainer = "container:to_do_list.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33246AC71C50ECF700039E29"
+               BlueprintIdentifier = "3320935A1C50FB9E00C6DAE9"
                BuildableName = "to_do_listTests.xctest"
                BlueprintName = "to_do_listTests"
                ReferencedContainer = "container:to_do_list.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33246AD21C50ECF700039E29"
+               BlueprintIdentifier = "332093651C50FB9E00C6DAE9"
                BuildableName = "to_do_listUITests.xctest"
                BlueprintName = "to_do_listUITests"
                ReferencedContainer = "container:to_do_list.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "33246AB31C50ECF700039E29"
+            BlueprintIdentifier = "332093461C50FB9E00C6DAE9"
             BuildableName = "to_do_list.app"
             BlueprintName = "to_do_list"
             ReferencedContainer = "container:to_do_list.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "33246AB31C50ECF700039E29"
+            BlueprintIdentifier = "332093461C50FB9E00C6DAE9"
             BuildableName = "to_do_list.app"
             BlueprintName = "to_do_list"
             ReferencedContainer = "container:to_do_list.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "33246AB31C50ECF700039E29"
+            BlueprintIdentifier = "332093461C50FB9E00C6DAE9"
             BuildableName = "to_do_list.app"
             BlueprintName = "to_do_list"
             ReferencedContainer = "container:to_do_list.xcodeproj">
