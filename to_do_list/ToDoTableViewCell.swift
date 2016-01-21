@@ -1,5 +1,5 @@
 //
-//  ToDoTableViewCell.swift
+//  ToDo.swift
 //  to_do_list
 //
 //  Created by Richard Geoghegan on 21/01/2016.
@@ -21,5 +21,5 @@ class ToDoTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    @IBOutlet weak var toDoCellLabel: UIView!
+    @IBOutlet weak var toDoCellLabel: UILabel!
 }

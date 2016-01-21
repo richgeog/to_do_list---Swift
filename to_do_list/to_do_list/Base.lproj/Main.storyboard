@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -11,15 +11,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="to_do_list" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="5Zv-po-QjA"/>
+                        <viewControllerLayoutGuide type="bottom" id="m74-cY-Ddc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="tWq-zt-DYo">
-                                <rect key="frame" x="20" y="20" width="560" height="105"/>
+                                <rect key="frame" x="16" y="20" width="288" height="105"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Things to do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92z-YU-oIm">
                                         <rect key="frame" x="0.0" y="0.0" width="96" height="21"/>
@@ -28,7 +28,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dmx-Vb-nJ6">
-                                        <rect key="frame" x="0.0" y="33" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="33" width="288" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -41,32 +41,37 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Dmx-Vb-nJ6" secondAttribute="trailing" id="Tw5-xZ-xB8"/>
-                                    <constraint firstItem="Dmx-Vb-nJ6" firstAttribute="leading" secondItem="tWq-zt-DYo" secondAttribute="leading" id="czz-aG-GJ6"/>
-                                    <constraint firstItem="Dmx-Vb-nJ6" firstAttribute="top" secondItem="tWq-zt-DYo" secondAttribute="top" id="xJo-Xo-IQp"/>
+                                    <constraint firstItem="Dmx-Vb-nJ6" firstAttribute="top" secondItem="tWq-zt-DYo" secondAttribute="top" id="ECg-J6-7wf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dmx-Vb-nJ6" secondAttribute="trailing" id="Lt5-xC-R58"/>
+                                    <constraint firstItem="Dmx-Vb-nJ6" firstAttribute="leading" secondItem="tWq-zt-DYo" secondAttribute="leading" id="jmy-4h-8MW"/>
                                 </constraints>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m5Z-Rt-1JH">
-                                <rect key="frame" x="20" y="141" width="560" height="439"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m5Z-Rt-1JH" customClass="ToDoTableViewCell" customModule="to_do_list">
+                                <rect key="frame" x="16" y="140" width="288" height="407.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aFU-fZ-YAA" customClass="ToDoTableViewCell" customModule="to_do_list">
-                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoTableViewCell" id="aFU-fZ-YAA" customClass="ToDoTableViewCell" customModule="to_do_list">
+                                        <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aFU-fZ-YAA" id="mgc-b0-xmg">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tz-Fu-NQT">
-                                                    <rect key="frame" x="80" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tz-Fu-NQT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="288" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="2tz-Fu-NQT" firstAttribute="leading" secondItem="aFU-fZ-YAA" secondAttribute="leading" id="CE5-bo-zoy"/>
+                                            <constraint firstItem="2tz-Fu-NQT" firstAttribute="top" secondItem="aFU-fZ-YAA" secondAttribute="top" id="Exz-8Q-HTA"/>
+                                            <constraint firstAttribute="trailing" secondItem="2tz-Fu-NQT" secondAttribute="trailing" id="Qcs-2u-92x"/>
+                                        </constraints>
                                         <connections>
-                                            <outlet property="toDoCellLabel" destination="mgc-b0-xmg" id="oRc-gr-bvR"/>
+                                            <outlet property="toDoCellLabel" destination="2tz-Fu-NQT" id="1sX-9B-nFF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -74,22 +79,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="m5Z-Rt-1JH" secondAttribute="trailing" id="D8Q-pK-7Ma"/>
-                            <constraint firstItem="tWq-zt-DYo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E2Y-AU-GcU"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="m5Z-Rt-1JH" secondAttribute="leading" id="Gv9-ow-ZBZ"/>
-                            <constraint firstItem="tWq-zt-DYo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iEq-NC-e97"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m5Z-Rt-1JH" secondAttribute="bottom" constant="20" id="mXi-AU-V5e"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tWq-zt-DYo" secondAttribute="trailing" id="u51-LX-Ixz"/>
-                            <constraint firstItem="m5Z-Rt-1JH" firstAttribute="top" secondItem="tWq-zt-DYo" secondAttribute="bottom" constant="16" id="zVp-vH-zxt"/>
+                            <constraint firstItem="tWq-zt-DYo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DiT-me-CtW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tWq-zt-DYo" secondAttribute="trailing" id="FGB-5R-1FE"/>
+                            <constraint firstItem="tWq-zt-DYo" firstAttribute="top" secondItem="5Zv-po-QjA" secondAttribute="bottom" id="LV5-ee-yO6"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="m5Z-Rt-1JH" id="eny-b6-Mwo"/>
                         <outlet property="toDoTextField" destination="Dmx-Vb-nJ6" id="uv7-hS-V8s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="387"/>
+            <point key="canvasLocation" x="162" y="366"/>
         </scene>
     </scenes>
 </document>
